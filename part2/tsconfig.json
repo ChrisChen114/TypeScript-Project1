@@ -1,0 +1,70 @@
+// 自动生成的
+//{
+//  "compilerOptions": {
+//    "module": "commonjs",
+//    "target": "es5",
+//    "sourceMap": true
+//  },
+//  "exclude": [
+//    "node_modules"
+//  ]
+//}
+
+{
+  /*
+    tsconfig.json 是ts编译器的配置文件，ts编译器可以根据他的信息来对代码进行配置
+      "include"用来指定哪些ts文件需要被编译
+        路径: ** 表示任意目录
+              * 表示任意文件
+
+      "exclude"
+  */
+
+  //
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./src/hello/**/*",
+    "node_modules"
+  ],
+  /*
+    编译器选项
+  */
+  "compilerOptions": {
+    //    module: 指定要使用的模块化的规范
+    "module": "system",
+    //    target: 用来指定ts被编译为的ES的版本
+    "target": "ES6",
+    //    lib 用来指定项目中要使用的库
+    //    "lib": ["dom"], //默认就是浏览器所需的运行环境，默认不用配置
+    "sourceMap": true,
+    //    outDir 用来指定编译后文件所在的目录
+    "outDir": "./dist",
+    //    outFile 将代码合并为一个文件
+    //    设置outFile后，所有的全局作用域中的代码会合并到同一个文件中
+    //    "outFile": "./dist/out.js",
+    // 是否对hs文件进行编译，默认为false
+    "allowJs": true,
+    //    是否检查js代码是否符合语法规范,默认为false
+    //    "checkJs": true,
+    //    是否移除注释
+    "removeComments": false,
+    //    不生成编译后的文件
+    "noEmit": false,
+    //    当有错误时，不生成编译后的文件
+    "noEmitOnError": true,
+    //
+    //  所有严格检查的总开关。如果为true，则类似下面的4个都将为true，可以省略不写
+    //    开发的时候建议打开
+    "strict": false,
+    //  用来设置编译后的文件是否使用严格模式，默认false
+    "alwaysStrict": true,
+    //  不允许隐式的any类型
+    "noImplicitAny": true,
+    //   不允许不明确类型的this
+    "noImplicitThis": true,
+    //   严格的检查空值
+    "strictNullChecks": true
+  }
+}
